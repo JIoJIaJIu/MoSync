@@ -16,6 +16,7 @@ public:
 	MyMoblet()
 	{
 		printf("Press zero or back to exit\n");
+        dev = new Device(this); 
 	}
 
 	/**
