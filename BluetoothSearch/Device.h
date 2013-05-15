@@ -2,7 +2,7 @@
 
 using namespace MAUtil;
 
-class Device: public BluetoothDeviceDiscoveringListener {
+class Device: public BluetoothDeviceDiscoveryListener {
     public:
         Device();
         void btNewDevice(const BtDevice& dev);
