@@ -13,9 +13,11 @@ public:
     void btNewDevice(const MAUtil::BtDevice &dev);
     void btDeviceDiscoveryFinished(int state);
     void setMessage(Wormhole::MessageStream &message);
+    void setID(const char* ID);
 private:
-    Wormhole::MessageStream *mMessage;
+    char *mID;
     Logger *mLogger;
+    Wormhole::MessageStream *mMessage;
 };
 
 #endif

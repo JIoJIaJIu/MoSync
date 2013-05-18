@@ -35,12 +35,10 @@ MyMoblet::MyMoblet()
     addMessageFun(
         "Beep",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::beep);
+    //3
     addMessageFun(
         "findDevices",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::findDevices);
-    addMessageFun(
-        "log",
-        (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::log);
 }
 
 void MyMoblet::vibrate(Wormhole::MessageStream& message)
@@ -57,17 +55,5 @@ void MyMoblet::beep(Wormhole::MessageStream& message)
 
 void MyMoblet::findDevices(Wormhole::MessageStream& message)
 {
-    mDiscoverer->search(message);
-}
-
-void MyMoblet::log(Wormhole::MessageStream& message)
-{
-    const char *callbackId = message.getNext();
-
-    MAUtil::String script = "mosync.bridge.reply(";
-    script += callbackId;
-    script += ", 'YAZ')";
-
-    mLogger->write(script.c_str());
-    message.callJS(script);
+    mDiscoverer->search(message, message.getNext());
 }

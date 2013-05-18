@@ -14,7 +14,6 @@ public:
     void vibrate(Wormhole::MessageStream& message);
     void beep(Wormhole::MessageStream& message);
     void findDevices(Wormhole::MessageStream& messsage);
-    void log(Wormhole::MessageStream& message);
 private:
     BluetoothDiscoverer *mDiscoverer;
     Logger *mLogger;

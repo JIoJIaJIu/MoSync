@@ -12,8 +12,12 @@ BluetoothDiscoverer::BluetoothDiscoverer(Logger &aLogger)
     mDD = new DiscoveryDeviceListener(aLogger);
 };
 
-void BluetoothDiscoverer::search(Wormhole::MessageStream &message)
+void BluetoothDiscoverer::search(Wormhole::MessageStream &message, const char *ID)
 {
+    if (ID == NULL)
+        return;
+
+    mDD->setID(ID);
     mDD->setMessage(message);
     this->startDeviceDiscovery(mDD, true);
 };

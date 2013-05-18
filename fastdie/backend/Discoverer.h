@@ -11,7 +11,7 @@ class BluetoothDiscoverer : public MAUtil::BluetoothDiscoverer
 public:
     BluetoothDiscoverer();
     BluetoothDiscoverer(Logger &aLogger);
-    void search(Wormhole::MessageStream& message);
+    void search(Wormhole::MessageStream& message, const char *ID);
 private:
     DiscoveryDeviceListener *mDD;
 };
