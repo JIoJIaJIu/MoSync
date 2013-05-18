@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+* @file index.html
+* @author Mikael Kindborg
+*
+* MoSync hybrid demo application that uses the jQuery Mobile
+* user interface framework.
+-->
+<html>
+<head>
+	<meta name="viewport" content="width=devicewidth, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<title>Twitter Reader</title>
+
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.2.0.min.css" />
+	<script src="jquery.mobile/jquery-1.8.2.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.2.0.min.js"></script>
+
+	<script src="js/wormhole.js" charset="utf-8"></script>
+	<script src="js/mosync.file.js" charset="utf-8"></script>
+
+	<script src="js/app.js" charset="utf-8"></script>
+	<script src="js/app.ui.js" charset="utf-8"></script>
+
+	<script>
+		/**
+		 * Here we add jQuery Mobile specific code.
+		 */
+		(function()
+		{
+			/**
+			 * Show one page.
+			 */
+			app.ui.showPage = function(page)
+			{
+				$.mobile.changePage("#" + page);//, {transition: "slideleft"});
+			};
+
+			/**
+			 * Navigate back one page.
+			 */
+			app.ui.goBack = function()
+			{
+				//console.log("@@@ app.ui.goBack activePage: " + $.mobile.activePage[0].id);
+
+				if ($.mobile.activePage[0].id === "home")
+				{
+					// Send the app to the background if
+					// we are on the home screen (first page).
+					//mosync.app.sendToBackground();
+					mosync.app.exit();
+				}
+				else
+				{
+					// Otherwise navigate to previous screen.
+					history.back();
+					return false;
+				}
+			};
+
+			/**
+			 * Called by framework when document has loaded.
+			 */
+			app.ui.initializeFramework = function()
+			{
+				// No special initialization is performed.
+			};
+
+
+			/**
+			 * Diplay the list of favourite users in the UI.
+			 * @param userData Array of user names.
+			 */
+			app.ui.displayFavouriteUsers = function(userData)
+			{
+				var users = app.parseFavouriteUsers(userData);
+				var list = "";
+				for (var i = 0; i < users.length; ++i)
+				{
+					list += "<li><a onclick='app.ui.showTweetsForUser(\"" +
+						users[i] +
+						"\")'>" +
+						users[i] +
+						"</a></li>";
+				}
+				$("#favouriteList").html(list);
+				$('#favouriteList').listview('refresh');
+				//$('#twitterList').trigger('create');
+			};
+
+			/**
+			 * Displays the Twitter user name in the UI.
+			 * @param user The Twitter user name.
+			 */
+			app.ui.showTweetListUserName = function(user)
+			{
+				// We do not set this due to problems with
+				// dynamically updating/refreshing the DOM/UI
+				// of jQuery Mobile apps.
+			};
+
+			/**
+			 * Displays a loading indicator in the UI.
+			 */
+			app.ui.showLoadingIndicator = function()
+			{
+				// We do not set this due to problems with
+				// dynamically updating/refreshing the DOM/UI
+				// of jQuery Mobile apps.
+				// TODO: Use the loading support of jQuery Mobile.
+			};
+
+			/**
+			 * Outputs the list of tweets to the user-interface.
+			 * @param tweets The tweets as an array. Each element
+			 * represents one tweet and can be accessed via tweets[i].text
+			 */
+			app.ui.showTweetList = function(tweets)
+			{
+				var results = "";
+				if ((!tweets) ||
+					(tweets.length === 0) ||
+					(tweets.error === "Not found"))
+				{
+					results = "<li>No tweets found</li>";
+				}
+				else
+				{
+					for (var i = 0; i < tweets.length; ++i)
+					{
+						results += "<li>" + tweets[i].text + "</li>";
+					}
+				}
+				$("#tweetListContent").html(results);
+				$("#tweetListContent").listview("refresh");
+			};
+		})();
+	</script>
+</head>
+
+<body>
+	<div id="home" data-role="page">
+		<div data-role="header">
+			<h1>TwitterReader</h1>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li data-role="fieldcontain">
+					<label for="userNameField" class="ui-hidden-accessible">User name:</label>
+					<input onkeydown="app.ui.keydown(event.which)"
+						type="text"
+						id="userNameField"
+						placeholder="User name"
+						autocapitalize="off"
+						autocorrect="off"
+						autocomplete="off" />
+				</li>
+				<li><a onclick="app.ui.showTweets()">View Tweets by this user</a></li>
+				<li data-icon="false"><a onclick="app.ui.addFavouriteUser()">Add to Favourites</a></li>
+			</ul>
+
+			<h2>Favourites</h2>
+			<ul id="favouriteList" data-role="listview" data-inset="true">
+				<li><a>(Empty)</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="tweetList" data-role="page" data-add-back-btn="true">
+		<div data-role="header">
+			<h1 id="tweetListHeader">TweetList</h1>
+		</div>
+
+		<div data-role="content">
+			<ul id="tweetListContent" data-role="listview">
+				<li>Loading...</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

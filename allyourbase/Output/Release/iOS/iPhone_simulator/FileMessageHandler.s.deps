@@ -1,0 +1,33 @@
+ \
+ /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/FileMessageHandler.s:  \
+ /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/FileMessageHandler.cpp \
+  /Applications/MoSync/include/conprint.h \
+  /Applications/MoSync/include/ma.h /Applications/MoSync/include/maapi.h \
+  /Applications/MoSync/include/maapi_defs.h \
+  /Applications/MoSync/include/maarg.h \
+  /Applications/MoSync/include/mastring.h \
+  /Applications/MoSync/include/mactype.h \
+  /Applications/MoSync/include/mavsprintf.h \
+  /Applications/MoSync/include/Wormhole/FileUtil.h \
+  /Applications/MoSync/include/ma.h \
+  /Applications/MoSync/include/MAUtil/String.h \
+  /Applications/MoSync/include/MAUtil/RefCounted.h \
+  /Applications/MoSync/include/MAUtil/Vector.h \
+  /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/FileMessageHandler.h \
+  /Applications/MoSync/include/Wormhole/MessageStream.h \
+  /Applications/MoSync/include/NativeUI/WebView.h \
+  /Applications/MoSync/include/NativeUI/Widget.h \
+  /Applications/MoSync/include/MAUtil/Map.h \
+  /Applications/MoSync/include/MAUtil/Dictionary.h \
+  /Applications/MoSync/include/maassert.h \
+  /Applications/MoSync/include/kazlib/dict.h \
+  /Applications/MoSync/include/limits.h \
+  /Applications/MoSync/include/MAUtil/collection_common.h \
+  /Applications/MoSync/include/MAUtil/Dictionary_impl.h \
+  /Applications/MoSync/include/MAUtil/Vector.h \
+  /Applications/MoSync/include/MAUtil/Environment.h \
+  /Applications/MoSync/include/MAUtil/ListenerSet.h \
+  /Applications/MoSync/include/MAUtil/util.h \
+  /Applications/MoSync/include/MAUtil/String.h \
+  /Applications/MoSync/include/IX_WIDGET.h \
+  /Applications/MoSync/include/NativeUI/WidgetUtil.h
