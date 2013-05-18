@@ -9,6 +9,8 @@
 
 #include "MAHeaders.h" // Defines BEEP_WAV
 
+#include "backend/Discoverer.cpp"
+
 // Namespaces we want to access.
 using namespace MAUtil;
 using namespace NativeUI;
