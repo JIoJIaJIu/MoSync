@@ -16,9 +16,18 @@ function initialize () {
         function() { mosync.app.exit(); },
         true
     );
-    document.getElementById('find-device').addEventListener('click', function () {
-        alert('123');
+
+    $('.main-page').click(function ($e) {
+        $('.main-page').hide();
+        $('.devices').show();
+        mosync.bridge.send(
+            ["Custom", "findDevices"],
+            function (devices) {
+                $('.devices').html(devices.toString());
+            }
+        );
     });
+
 }
 
 //function changeColor()

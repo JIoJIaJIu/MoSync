@@ -3,3 +3,7 @@
 .metadata/
 allyourbase/Output/
 allyourbase/Resources/LocalFiles.bin
+
+fastdie/Output/
+fastdie/ReleasePackages/
+fastdie/Resources/LocalFiles.bin
