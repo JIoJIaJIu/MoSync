@@ -17,7 +17,6 @@ $(function () {
         });
     });
     $('.log').on('click', function () {
-        alert('log');
         sendToPlatform(['log'], function (message) {
             $('.logger').prepend(message + '<br>');
         });
