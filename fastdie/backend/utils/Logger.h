@@ -4,7 +4,7 @@ class Logger
 {
 public:
     Logger();
-    void write(char *str);
+    void write(const char *str);
 private:
     Wormhole::FileUtil *util;
 };

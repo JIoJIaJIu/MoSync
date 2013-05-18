@@ -7,7 +7,7 @@ Logger::Logger()
     util = new Wormhole::FileUtil; 
 }
 
-void Logger::write(char *str)
+void Logger::write(const char *str)
 {
     MAUtil::String file;
     file += "/storage/sdcard0/mosync.txt";
@@ -15,5 +15,9 @@ void Logger::write(char *str)
     MAUtil::String data;
     data += str;
 
-    util->writeTextToFile(file, data);
+
+    MAUtil::String predata;
+    util->readTextFromFile(file, predata);
+    predata +=data;
+    util->writeTextToFile(file, predata);
 }

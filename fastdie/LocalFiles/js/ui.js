@@ -6,6 +6,7 @@ function onError (argument) {
     $('body').html(JSON.stringify(arguments));
 }
 
+mosync.rlog("GOOGO");
 $(function () {
     //$('body').html('');
     //$('body').html('LOL');

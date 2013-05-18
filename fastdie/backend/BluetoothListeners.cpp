@@ -15,7 +15,6 @@ void DiscoveryDeviceListener::btNewDevice(const MAUtil::BtDevice &dev)
     script += ", '";
     script += dev.name.c_str();
     script += "')";
-    lprintfln(script.c_str());
     mMessage->callJS(script);
 }
 

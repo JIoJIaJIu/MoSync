@@ -56,8 +56,7 @@ html, body {
 .logger {
     z-index: 1000;
     bottom: 0;
-    color: white;
-    background: black;
+    background: yellow;
     height: 300px;
     width: 200px;
     font-size: 12px;

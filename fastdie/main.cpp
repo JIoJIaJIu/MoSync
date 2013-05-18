@@ -13,6 +13,7 @@
 #include "backend/BluetoothListeners.h"
 #include "backend/Discoverer.h"
 #include "backend/utils/Logger.h"
+#include <conprint.h>
 
 // Namespaces we want to access.
 //using namespace MAUtil;
@@ -29,8 +30,10 @@ public:
 	{
 		// Show the start page.
 		showPage("index.html");
-        logger = new Logger();
-        logger->write("XYU\n");
+
+        mLogger = new Logger();
+        mLogger->write("XYU\n");
+
 
 		// Set the sound used by the PhoneGap beep notification API.
 		// BEEP_WAV is defined in file Resources/Resources.lst.
@@ -52,6 +55,9 @@ public:
         addMessageFun(
             "findDevices",
             (FunTable::MessageHandlerFun)&MyMoblet::findDevices);
+        addMessageFun(
+            "log",
+            (FunTable::MessageHandlerFun)&MyMoblet::log);
 	}
 
 	void vibrate(Wormhole::MessageStream& message)
@@ -70,9 +76,21 @@ public:
     {
         mDiscoverer->search(message);
     }
+
+    void log(Wormhole::MessageStream& message)
+    {
+        const char *callbackId = message.getNext();
+
+        MAUtil::String script = "mosync.bridge.reply(";
+        script += callbackId;
+        script += ", 'YAZ')";
+
+        mLogger->write(script.c_str());
+        message.callJS(script);
+    }
 private:
     BluetoothDiscoverer *mDiscoverer;
-    Logger *logger;
+    Logger *mLogger;
 };
 
 /**
