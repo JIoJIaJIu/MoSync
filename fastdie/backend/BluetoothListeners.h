@@ -7,8 +7,7 @@ class DiscoveryDeviceListener: public MAUtil::BluetoothDeviceDiscoveryListener
 {
 public:
     DiscoveryDeviceListener();
-    ~DiscoveryDeviceListener();
-    void btNewDevice(MAUtil::BtDevice &dev);
+    void btNewDevice(const MAUtil::BtDevice &dev);
     void btDeviceDiscoveryFinished(int state);
 };
 
