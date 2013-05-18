@@ -11,14 +11,20 @@ DiscoveryDeviceListener::DiscoveryDeviceListener(Logger &aLogger)
 void DiscoveryDeviceListener::btNewDevice(const MAUtil::BtDevice &dev)
 {
     mLogger->write("Finded new device");
-    MAUtil::String script = "mosync.bridge.reply("; 
-	const char* callbackId = mMessage->getNext();
 
-    script += callbackId;
-    script += ", '";
+    MAUtil::String script = "mosync.bridge.reply("; 
+//	const char* callbackId = mMessage->getNext();
+
+    mLogger->write(dev.name.c_str());
+ //   mLogger->write(callbackId);
+
+  //  script += callbackId;
+    script += "2, '";
     script += dev.name.c_str();
     script += "')";
     mMessage->callJS(script);
+
+    mLogger->write(script.c_str());
 }
 
 void DiscoveryDeviceListener::btDeviceDiscoveryFinished(int state)
