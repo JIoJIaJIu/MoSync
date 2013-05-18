@@ -7,12 +7,12 @@ function onError (argument) {
 }
 
 $(function () {
-    $('body').html('');
-    $('body').html('LOL');
-    $('body').prepend('1<br>');
-    appCore.accelerometer.down(function (data) {
-        $('body').prepend(JSON.stringify(data)+ '<br>');
-    });
+    //$('body').html('');
+    //$('body').html('LOL');
+    //$('body').prepend('1<br>');
+    //appCore.accelerometer.down(function (data) {
+        //$('body').prepend(JSON.stringify(data)+ '<br>');
+    //});
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
@@ -20,9 +20,9 @@ $(function () {
             $('.log').prepend(JSON.stringify(arguments));
         });
     });
-    $('.log').on('click', function () {
+    $('.find-devices').on('click', function () {
         sendToPlatform(['log'], function (message) {
-            $('.logger').prepend(message + '<br>');
+            $('.devices').append(message + '<br>');
         });
     });
 
