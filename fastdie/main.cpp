@@ -12,6 +12,7 @@
 #include <MAUtil/BluetoothDiscovery.h>
 #include "backend/BluetoothListeners.h"
 #include "backend/Discoverer.h"
+#include "backend/utils/Logger.h"
 
 // Namespaces we want to access.
 //using namespace MAUtil;
@@ -28,6 +29,8 @@ public:
 	{
 		// Show the start page.
 		showPage("index.html");
+        logger = new Logger();
+        logger->write("XYU\n");
 
 		// Set the sound used by the PhoneGap beep notification API.
 		// BEEP_WAV is defined in file Resources/Resources.lst.
@@ -69,6 +72,7 @@ public:
     }
 private:
     BluetoothDiscoverer *mDiscoverer;
+    Logger *logger;
 };
 
 /**
