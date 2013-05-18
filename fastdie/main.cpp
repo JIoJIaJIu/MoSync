@@ -11,9 +11,10 @@
 
 #include <MAUtil/BluetoothDiscovery.h>
 #include "backend/BluetoothListeners.h"
+#include "backend/Discoverer.h"
 
 // Namespaces we want to access.
-using namespace MAUtil;
+//using namespace MAUtil;
 using namespace NativeUI;
 using namespace Wormhole;
 
@@ -35,6 +36,8 @@ public:
 		// two ways of playing a beep sound.
 		setBeepSound(BEEP_WAV);
 
+        //mDiscoverer = new BluetoothDiscoverer();
+
 		// Register functions to handle custom messages sent
 		// from JavaScript.
 		addMessageFun(
@@ -43,6 +46,11 @@ public:
 		addMessageFun(
 			"Beep",
 			(FunTable::MessageHandlerFun)&MyMoblet::beep);
+            /*
+        addMessageFun(
+            "findDevices",
+            (FunTable::MessageHandlerFun)&MyMoblet::findDevices);
+            */
 	}
 
 	void vibrate(Wormhole::MessageStream& message)
@@ -56,6 +64,13 @@ public:
 		// This is how to play a sound using MoSync API.
 		maSoundPlay(BEEP_WAV, 0, maGetDataSize(BEEP_WAV));
 	}
+
+    void findDevices()
+    {
+        //mDiscoverer->search();
+    }
+private:
+    BluetoothDiscoverer *mDiscoverer;
 };
 
 /**

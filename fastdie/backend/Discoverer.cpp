@@ -7,6 +7,9 @@ BluetoothDiscoverer::BluetoothDiscoverer()
 {
     printf("[Constructor] Discoverer\n");
     mDD = new DiscoveryDeviceListener();
-    this->startDeviceDiscovery(mDD, true);
 };
 
+void BluetoothDiscoverer::search()
+{
+    this->startDeviceDiscovery(mDD, true);
+};
