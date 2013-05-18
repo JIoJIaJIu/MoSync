@@ -18,6 +18,7 @@ void Logger::write(const char *str)
 
     MAUtil::String predata;
     util->readTextFromFile(file, predata);
-    predata +=data;
+    predata += "\n";
+    predata += data;
     util->writeTextToFile(file, predata);
 }

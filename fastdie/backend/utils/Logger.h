@@ -1,3 +1,6 @@
+#ifndef _LOGGER_H_
+#define _LOGGER_H_
+
 #include <Wormhole/FileUtil.h>
 
 class Logger
@@ -8,3 +11,5 @@ public:
 private:
     Wormhole::FileUtil *util;
 };
+
+#endif

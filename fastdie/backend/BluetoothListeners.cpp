@@ -1,13 +1,16 @@
 #include "BluetoothListeners.h"
 #include <Wormhole/MessageStream.h>
 #include <MAUtil/String.h>
+#include "utils/logger.h"
 
-DiscoveryDeviceListener::DiscoveryDeviceListener()
+DiscoveryDeviceListener::DiscoveryDeviceListener(Logger &aLogger)
 {
+    mLogger = &aLogger;
 }
 
 void DiscoveryDeviceListener::btNewDevice(const MAUtil::BtDevice &dev)
 {
+    mLogger->write("Finded new device");
     MAUtil::String script = "mosync.bridge.reply("; 
 	const char* callbackId = mMessage->getNext();
 
@@ -20,6 +23,7 @@ void DiscoveryDeviceListener::btNewDevice(const MAUtil::BtDevice &dev)
 
 void DiscoveryDeviceListener::btDeviceDiscoveryFinished(int state)
 {
+    mLogger->write("btDeviceDiscoveryFinished");
 }
 
 void DiscoveryDeviceListener::setMessage(Wormhole::MessageStream &message)

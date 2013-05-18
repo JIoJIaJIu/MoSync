@@ -32,8 +32,7 @@ public:
 		showPage("index.html");
 
         mLogger = new Logger();
-        mLogger->write("XYU\n");
-
+        mLogger->write("INIT\n");
 
 		// Set the sound used by the PhoneGap beep notification API.
 		// BEEP_WAV is defined in file Resources/Resources.lst.
@@ -42,7 +41,7 @@ public:
 		// two ways of playing a beep sound.
 		setBeepSound(BEEP_WAV);
 
-        //mDiscoverer = new BluetoothDiscoverer();
+        mDiscoverer = new BluetoothDiscoverer(*mLogger);
 
 		// Register functions to handle custom messages sent
 		// from JavaScript.
