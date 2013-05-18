@@ -46,11 +46,9 @@ public:
 		addMessageFun(
 			"Beep",
 			(FunTable::MessageHandlerFun)&MyMoblet::beep);
-            /*
         addMessageFun(
             "findDevices",
             (FunTable::MessageHandlerFun)&MyMoblet::findDevices);
-            */
 	}
 
 	void vibrate(Wormhole::MessageStream& message)
@@ -65,9 +63,9 @@ public:
 		maSoundPlay(BEEP_WAV, 0, maGetDataSize(BEEP_WAV));
 	}
 
-    void findDevices()
+    void findDevices(Wormhole::MessageStream& message)
     {
-        //mDiscoverer->search();
+        mDiscoverer->search(message);
     }
 private:
     BluetoothDiscoverer *mDiscoverer;

@@ -4,11 +4,13 @@
 #include "MAUtil/BluetoothDiscovery.h"
 #include "BluetoothListeners.h"
 
+#include <Wormhole/MessageStream.h>
+
 class BluetoothDiscoverer : public MAUtil::BluetoothDiscoverer
 {
 public:
     BluetoothDiscoverer();
-    void search();
+    void search(Wormhole::MessageStream& message);
 private:
     DiscoveryDeviceListener *mDD;
 };
