@@ -30,8 +30,38 @@ document.addEventListener(
     //document.body.style.backgroundColor = color;
 //}
 
+/**
+ * Отправка сообщений бекенду
+ *
+ * @param message {Array} list of words
+ * @param callback {Function}
+ */
+function sendToPlatform (messages, callback) {
+    var arr = ['Custom'],
+        $loading = $('.loading');
+
+    $loading.show();
+    arr = arr.concat(messages);
+    mosync.bridge.send(
+        arr,
+        function (data) {
+            $loading.hide();
+            callback(data);
+        }
+    );
+}
+
+/**
+ * Генерация mustache шаблона
+ *
+ * @param templateName имя шаблона без префикса
+ * @param data данные
+ */
 function render (templateName, data) {
-    return Mustache.render($('.m-'+templateName).html(), data);
+    if (!templateName)
+        return '';
+
+    return Mustache.render($('.m-'+templateName).html(), data || null);
 }
 
 /**
