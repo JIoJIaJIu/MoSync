@@ -33,21 +33,16 @@
 /**
  * Отправка сообщений бекенду
  *
- * @param message {Array} list of words
+ * @param message {String} message name
  * @param callback {Function}
  */
-function sendToPlatform (messages, callback) {
-    var arr = ['Custom'],
-        $loading = $('.loading');
+var counter = 1;
+function sendToPlatform (message, callback) {
+    var arr = ['Custom', message, counter++];
 
-    $loading.show();
-    arr = arr.concat(messages);
     mosync.bridge.send(
         arr,
-        function (data) {
-            $loading.hide();
-            callback(data);
-        }
+        callback
     );
 }
 

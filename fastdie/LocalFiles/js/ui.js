@@ -7,28 +7,23 @@ function onError (argument) {
 }
 
 $(function () {
-    //$('body').html('');
-    //$('body').html('LOL');
-    //$('body').prepend('1<br>');
-    //new appCore.accelerometer().down(function (data) {
-        //$('body').prepend(JSON.stringify(data)+ '<br>');
-    //});
-    //setInterval(function () {
-        //new appCore.accelerometer().isBangPos(function () {
-            
-            //$('body').prepend('bang pos');
-            //$('body').prepend('bang pos');
-        //});
-    //}, 100);
+    $('body').html('');
+    $('body').html('LOL');
+    $('body').prepend('1<br>');
+    setInterval(function() {
+        appCore.accelerometer.isDownPosition() && $('body').prepend('down<br>');
+        appCore.accelerometer.isBangPosition() && $('body').prepend('bang<br>');
+        appCore.accelerometer.isBadPosition() && $('body').prepend('bad<br>');
+    }, 50);
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
-        sendToPlatform(['findDevices'], function () {
+        sendToPlatform('findDevices', function () {
             $('.devices').prepend(JSON.stringify(arguments) + '<br>');
         });
     });
     $('.log').on('click', function () {
-        sendToPlatform(['log'], function (message) {
+        sendToPlatform('log', function (message) {
             $('.logger').append(message + '<br>');
         });
     });
