@@ -13,7 +13,8 @@ $(function () {
         $('.main-page').hide();
         $('.devices').show();
         sendToPlatform(['findDevices'], function () {
-            $('.body').append((JSON.stringify(arguments)));
+            $('.body').html(JSON.stringify(arguments));
+            alert(JSON.stringify(arguments));
         })
     });
 })
