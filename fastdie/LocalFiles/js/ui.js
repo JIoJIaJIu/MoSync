@@ -7,13 +7,17 @@ function onError (argument) {
 }
 
 $(function () {
-
+    $('body').html('');
+    $('body').html('LOL');
+    $('body').prepend('1<br>');
+    appCore.accelerometer.down(function (data) {
+        $('body').prepend(JSON.stringify(data)+ '<br>');
+    });
     $('.find-device').on('click', function () {
-        $('.main-page').hide();
+        $('.main-page').show();
         $('.devices').show();
         sendToPlatform(['findDevices'], function () {
-            $('body').html(JSON.stringify(arguments));
-            alert(JSON.stringify(arguments));
+            $('.log').prepend(JSON.stringify(arguments));
         });
     });
     $('.log').on('click', function () {
@@ -27,4 +31,4 @@ $(function () {
         function() { mosync.app.exit(); },
         true
     );
-})
+});

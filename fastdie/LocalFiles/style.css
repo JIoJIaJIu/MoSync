@@ -6,6 +6,7 @@ html, body {
 	background-color: #FFFFFF;
 	font-family: sans-serif;
 	text-decoration: none;
+    color:black;
 
 	/* Disable text selection. */
 	-webkit-touch-callout: none;
@@ -41,6 +42,7 @@ html, body {
     padding: 15px 10px 15px 10px;
 }
 .devices {
+    background:green;
     display: none;
 }
 
