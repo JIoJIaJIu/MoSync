@@ -14,17 +14,25 @@
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <script type="text/javascript" charset="utf-8" src="js/wormhole.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/components/mustache.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/mustache.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/core.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/ui.js"></script>
     </head>
     <body>
         <div class="main-page">
             <div class="button ">Создать игру</div>
             <div class="button">Найти игру</div>
-            <div class="button" id="find-device">Поиск устройств</div>
+            <div class="button find-device">Поиск устройств</div>
         </div>
         <div class="devices">
             Загрузка...
         </div>
     </body>
+    <script type="text/html" class="m-device-list-item">
+<ul class="devices">
+    {{#devices}}
+        <li>{{.}}</li>
+    {{/devices}}
+</ul>
+    </script>
 </html>

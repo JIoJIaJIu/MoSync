@@ -1,4 +1,3 @@
-
 // Register event listeners.
 
 // The "deviceready" event is sent when the system
@@ -6,29 +5,13 @@
 document.addEventListener(
     "deviceready",
     initialize,
-    true);
+    true
+);
 
-
-function initialize () {
-    // Close the application when the back key is pressed
-    document.addEventListener(
-        "backbutton",
-        function() { mosync.app.exit(); },
-        true
-    );
-
-    $('.main-page').click(function ($e) {
-        $('.main-page').hide();
-        $('.devices').show();
-        mosync.bridge.send(
-            ["Custom", "findDevices"],
-            function (devices) {
-                $('.devices').html(devices.toString());
-            }
-        );
-    });
-
-}
+document.addEventListener(
+    'DOMContentLoaded',
+    initialize
+)
 
 //function changeColor()
 //{
@@ -46,6 +29,10 @@ function initialize () {
     //document.documentElement.style.backgroundColor = color;
     //document.body.style.backgroundColor = color;
 //}
+
+function render (templateName, data) {
+    return Mustache.render($('.m-'+templateName).html(), data);
+}
 
 /**
 * Vibrate device.

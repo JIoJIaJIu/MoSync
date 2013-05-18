@@ -557,7 +557,7 @@ var mosync = (function()
 			}
 			else
 			{
-				alert("mosync.bridge.sendRaw: unknown platform");
+				//alert("mosync.bridge.sendRaw: unknown platform");
 			}
 		};
 
