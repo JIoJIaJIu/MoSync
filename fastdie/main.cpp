@@ -9,7 +9,8 @@
 
 #include "MAHeaders.h" // Defines BEEP_WAV
 
-#include "backend/Discoverer.cpp"
+#include <MAUtil/BluetoothDiscovery.h>
+#include "backend/BluetoothListeners.h"
 
 // Namespaces we want to access.
 using namespace MAUtil;

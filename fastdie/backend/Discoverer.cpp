@@ -1,22 +1,13 @@
-#include "Discoverer.h"
+#include "MAUtil/BluetoothDiscovery.h"
+#include "BluetoothListeners.h"
 #include <conprint.h>
 
 using namespace MAUtil;
 
-Discoverer::Discoverer()
+BluetoothDiscoverer::BluetoothDiscoverer()
 {
     printf("[Constructor] Discoverer\n");
+    mDD = new DiscoveryDeviceListener();
+    //this->startDeviceDiscovery(mDListener, true);
 };
 
-Discoverer::~Discoverer()
-{
-    printf("[Desctructor] Discoverer\n");
-};
-
-void DiscoveryListener::btNewDevice(BtDevice &dev)
-{
-};
-
-void DiscoveryListener::btDeviceDiscoveryFinished(int state)
-{
-};
