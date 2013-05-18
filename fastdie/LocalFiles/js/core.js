@@ -2,16 +2,16 @@
 
 // The "deviceready" event is sent when the system
 // has finished loading.
-document.addEventListener(
-    "deviceready",
-    initialize,
-    true
-);
+//document.addEventListener(
+    //"deviceready",
+    //initialize,
+    //true
+//);
 
-document.addEventListener(
-    'DOMContentLoaded',
-    initialize
-)
+//document.addEventListener(
+    //'DOMContentLoaded',
+    //initialize
+//)
 
 //function changeColor()
 //{
