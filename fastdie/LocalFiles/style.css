@@ -17,47 +17,14 @@ html, body {
 	-o-user-select: none;
 	user-select: none;
 }
-
-.background {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.content {
-    width: 70%;
-    height: 70%;
-    z-index: 1;
-}
-.main-page {
-    width: 70%;
-    height: 70%;
-}
-
 .button {
-    text-align: center;
-    color: #222222;
-    font-size: 1.7em;
-    font-weight: bold;
     margin: 10px;
-    padding: 15px 10px 15px 10px;
+    padding: 10px;
+    background: grey;
 }
-.devices {
-    background:green;
+.button:hover {
+    background: red;
 }
-
-.main-page .button {
-}
-.main-page .button:first-child {
-}
-
-.loading {
-    display: none;
-}
-.logger {
-    z-index: 1000;
-    bottom: 0;
-    background: yellow;
-    height: 300px;
-    width: 200px;
-    font-size: 12px;
+.button:active {
+    background: blue;
 }

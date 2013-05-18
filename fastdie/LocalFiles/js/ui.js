@@ -18,12 +18,12 @@ $(function () {
         $('.main-page').show();
         $('.devices').show();
         sendToPlatform(['findDevices'], function () {
-            $('.log').prepend(JSON.stringify(arguments));
+            $('.devices').prepend(JSON.stringify(arguments));
         });
     });
-    $('.find-devices').on('click', function () {
+    $('.log').on('click', function () {
         sendToPlatform(['log'], function (message) {
-            $('.devices').append(message + '<br>');
+            $('.logger').append(message + '<br>');
         });
     });
 
