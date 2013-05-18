@@ -25,6 +25,3 @@ html, body {
 .button:hover {
     background: red;
 }
-.button:active {
-    background: blue;
-}
