@@ -1,471 +1,0 @@
-TWebViewTwitter
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Info.plist WebViewTwitter.plist
-cCpResource resources build/Release-iphonesimulator/WebViewTwitter.app/resources
-cCpResource data_section.bin build/Release-iphonesimulator/WebViewTwitter.app/data_section.bin
-cCpResource Icon-72.png build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png
-cCpResource Icon.png build/Release-iphonesimulator/WebViewTwitter.app/Icon.png
-cCpResource Icon@2x.png build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png
-cCpResource Default-568h@2x.png build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png
-cProcessPCH /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter normal i386
-cGenerateDSYMFile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter
-cTouch /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
-c0000000050EDEAFB0000000000000110
-t1357769467
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c00000000514B62E400000000001EB540
-t1363895012
-s2012480
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c00000000514B62E400000000000C1030
-t1363895012
-s790576
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c00000000514B62E400000000003D4DF0
-t1363895012
-s4017648
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000514B62E50000000000228FE0
-t1363895013
-s2265056
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c00000000514B62E4000000000009C590
-t1363895012
-s640400
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c00000000514B62E50000000000085620
-t1363895013
-s546336
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreMotion.framework/CoreMotion
-c00000000514B62E500000000000FB1E0
-t1363895013
-s1028576
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
-c00000000514B62E50000000000020F20
-t1363895013
-s134944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/EventKit.framework/EventKit
-c00000000514B62E500000000001924E0
-t1363895013
-s1647840
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000514B62E600000000003DDFA0
-t1363895014
-s4054944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c00000000514B62E500000000000015F7
-t1363895013
-s5623
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
-c00000000514B62E700000000000F9CF0
-t1363895015
-s1023216
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c00000000514B62E800000000002DBA50
-t1363895016
-s2996816
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
-c00000000514B62E80000000000114570
-t1363895016
-s1131888
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c00000000514B62E800000000000BCC20
-t1363895016
-s773152
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c00000000514B62E80000000000015400
-t1363895016
-s87040
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c00000000514B62E900000000001D5750
-t1363895017
-s1922896
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
-c00000000514B62E90000000000026C50
-t1363895017
-s158800
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c00000000514B62E9000000000006CC50
-t1363895017
-s445520
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c00000000514B62E90000000000000E8D
-t1363895017
-s3725
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000514B62EB0000000000AB6230
-t1363895019
-s11231792
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/iAd.framework/iAd
-c00000000514B62E60000000000036AF0
-t1363895014
-s223984
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/lib/libsqlite3.dylib
-c00000000514B62F700000000000D1F20
-t1363895031
-s859936
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm
-c00000000519758FC0000000000001820
-t1368873212
-s6176
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm
-c00000000519758FC0000000000001028
-t1368873212
-s4136
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp
-c00000000519758FC00000000001C7B8B
-t1368873212
-s1866635
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Default-568h@2x.png
-c00000000519758FC00000000000048A2
-t1368873212
-s18594
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon-72.png
-c00000000519758FF000000000000090A
-t1368873215
-s2314
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon.png
-c00000000519758FE0000000000000719
-t1368873214
-s1817
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon@2x.png
-c00000000519759010000000000000D3E
-t1368873217
-s3390
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch
-c00000000519758FC0000000000000285
-t1368873212
-s645
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon.png
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Info.plist
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/PkgInfo
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/data_section.bin
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/resources
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/WebViewTwitter.LinkFileList
-c0000000051975902000000000000036E
-t1368873218
-s878
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o
-t2
-s0
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/data_section.bin
-c00000000519758FC00000000000088B4
-t1368873212
-s34996
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/libs/Release-iphonesimulator/libMoSyncLib.a
-c00000000519758FC000000000070A228
-t1368873212
-s7381544
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m
-c00000000519758FC00000000000003D7
-t1368873212
-s983
-
-N/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/resources
-c00000000519758FC00000000000B2CB4
-t1368873212
-s732340
-
-N/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth
-t2
-s0
-
-N/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth
-t2
-s0
-
-N/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth
-t2
-s0
-
-NWebViewTwitter.plist
-c00000000519758FC0000000000000606
-t1368873212
-s1542
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf2232a829047b741^41d35a829047b741^---0#1#0#--18"Check dependencies36"C97EEA6C-51E5-4A93-ABAB-9F2F8B542F61-
-
-CCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s390566019.199458
-e390566019.406163
-r1
-xCompileC
-xbuild/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm
-xnormal
-xi386
-xobjective-c++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Compile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm4d4833839047b741^5dfa67839047b741^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm0000000000000000^4455"CompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o Classes/MoSyncAppDelegate.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -include /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch -MMD -MT dependencies -MF /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.d --serialize-diagnostics /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncAppDelegate.mm -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncAppDelegate.o36"0385C957-372F-4458-AAA6-1830859304F1-
-
-CCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s390566019.200604
-e390566019.404592
-r1
-xCompileC
-xbuild/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm
-xnormal
-xi386
-xobjective-c++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection150"Compile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mmdf8b33839047b741^4b9267839047b741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm0000000000000000^4473"CompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o Classes/MoSyncViewController.mm normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -include /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch -MMD -MT dependencies -MF /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.d --serialize-diagnostics /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/MoSyncViewController.mm -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/MoSyncViewController.o36"3B8B8425-DB7B-4CA6-ACED-6A0FC7536C69-
-
-CCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s390566019.177760
-e390566019.393966
-r1
-xCompileC
-xbuild/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m444d30839047b741^efe764839047b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m0000000000000000^4237"CompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -include /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch -MMD -MT dependencies -MF /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/main.m -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/main.o36"61FE4455-20A0-468A-B0D0-1E31F24C9B88-
-
-CCompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s390566018.489348
-e390566040.337696
-r1
-xCompileC
-xbuild/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection144"Compile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp147a7d829047b741^265256989047b741^---0#0#0#-19%DVTDocumentLocation2@152"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp0000000000000000^4206"CompileC build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o Classes/rebuild.build.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -include /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch -MMD -MT dependencies -MF /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.d --serialize-diagnostics /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Classes/rebuild.build.cpp -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/rebuild.build.o36"3C3F5C80-130D-4D5E-A529-4C283723AB4D-
-
-CCpResource Default-568h@2x.png build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png
-s390566018.385373
-e390566018.388662
-r1
-xCpResource
-xDefault-568h@2x.png
-xbuild/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png87c362829047b741^9d7f63829047b741^---0#0#0#-19%DVTDocumentLocation2@195"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png000000000080d041^948"CpResource "Default-568h@2x.png" "build/Release-iphonesimulator/WebViewTwitter.app/Default-568h@2x.png"    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Default-568h@2x.png" /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"7C85AA2A-76BF-4503-A570-C75CB76EAC6C-
-
-CCpResource Icon-72.png build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png
-s390566018.378952
-e390566018.384594
-r1
-xCpResource
-xIcon-72.png
-xbuild/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png3d2761829047b741^d17462829047b741^---0#0#0#-19%DVTDocumentLocation2@187"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png000000000080d041^918"CpResource Icon-72.png build/Release-iphonesimulator/WebViewTwitter.app/Icon-72.png    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon-72.png /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"173B57B8-F128-4D1D-9F50-EE84D21A6D69-
-
-CCpResource Icon.png build/Release-iphonesimulator/WebViewTwitter.app/Icon.png
-s390566018.379012
-e390566018.386918
-r1
-xCpResource
-xIcon.png
-xbuild/Release-iphonesimulator/WebViewTwitter.app/Icon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/Release-iphonesimulator/WebViewTwitter.app/Icon.pngf03461829047b741^520d63829047b741^---0#0#0#-19%DVTDocumentLocation2@184"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon.png000000000080d041^909"CpResource Icon.png build/Release-iphonesimulator/WebViewTwitter.app/Icon.png    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon.png /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"8471830C-CFBB-4938-A414-351EB91EC836-
-
-CCpResource Icon@2x.png build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png
-s390566018.385293
-e390566018.387587
-r1
-xCpResource
-xIcon@2x.png
-xbuild/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png23bf62829047b741^193963829047b741^---0#0#0#-19%DVTDocumentLocation2@187"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png000000000080d041^924"CpResource "Icon@2x.png" "build/Release-iphonesimulator/WebViewTwitter.app/Icon@2x.png"    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/Icon@2x.png" /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"89DF6802-61CE-4D4F-B7ED-C89F7EAE759A-
-
-CCpResource data_section.bin build/Release-iphonesimulator/WebViewTwitter.app/data_section.bin
-s390566018.378816
-e390566018.384016
-r1
-xCpResource
-xdata_section.bin
-xbuild/Release-iphonesimulator/WebViewTwitter.app/data_section.bin
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Release-iphonesimulator/WebViewTwitter.app/data_section.binf52b61829047b741^c65062829047b741^---0#0#0#-19%DVTDocumentLocation2@192"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/data_section.bin000000000080d041^933"CpResource data_section.bin build/Release-iphonesimulator/WebViewTwitter.app/data_section.bin    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/data_section.bin /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"80796A78-1098-49D8-9A49-116FD18D5EA7-
-
-CCpResource resources build/Release-iphonesimulator/WebViewTwitter.app/resources
-s390566018.378801
-e390566018.385016
-r1
-xCpResource
-xresources
-xbuild/Release-iphonesimulator/WebViewTwitter.app/resources
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Release-iphonesimulator/WebViewTwitter.app/resourcesd02861829047b741^8a9062829047b741^---0#0#0#-19%DVTDocumentLocation2@185"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/resources000000000080d041^912"CpResource resources build/Release-iphonesimulator/WebViewTwitter.app/resources    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/resources /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"8BF54689-C3BC-4190-AD12-E7076C35FC74-
-
-CGenerateDSYMFile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter
-s390566040.690612
-e390566040.981899
-r1
-xGenerateDSYMFile
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection173"Generate /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM041db1989047b741^895dfb989047b741^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM000000000080d041^891"GenerateDSYMFile build/Release-iphonesimulator/WebViewTwitter.app.dSYM build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app.dSYM36"DEB47722-585B-4809-9745-372DD552FBB6-
-
-CLd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter normal i386
-s390566040.345793
-e390566040.683232
-r1
-xLd
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection179"Link /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwittere82e59989047b741^6ce8ae989047b741^---0#0#0#--2167"Ld build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter normal i386    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv IPHONEOS_DEPLOYMENT_TARGET 3.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -Llibs/Release-iphonesimulator -L/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/libs/Release-iphonesimulator -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator -filelist /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/Objects-normal/i386/WebViewTwitter.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=3.0 -framework CoreVideo -framework StoreKit -framework CoreMedia -weak_framework MobileCoreServices -weak_framework iAd -framework MediaPlayer -weak_framework EventKit -weak_framework CoreMotion -framework AddressBook -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -weak_framework AVFoundation -framework CoreLocation -lMoSyncLib -framework OpenGLES -framework QuartzCore -weak_framework MessageUI -lsqlite3 -framework SystemConfiguration -framework MapKit -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/WebViewTwitter36"B7C5CB83-6EF2-48C6-9FA8-C935E9395517-
-
-CProcessInfoPlistFile /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Info.plist WebViewTwitter.plist
-s390566018.365747
-e390566018.370793
-r1
-xProcessInfoPlistFile
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Info.plist
-xWebViewTwitter.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process WebViewTwitter.pliste3e15d829047b741^6cec5e829047b741^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/WebViewTwitter.plist0000000000000000^881"ProcessInfoPlistFile build/Release-iphonesimulator/WebViewTwitter.app/Info.plist WebViewTwitter.plist    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility WebViewTwitter.plist -genpkginfo /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app/Info.plist36"B6E7FE42-F27B-4F58-BE02-7DA7C3D0E06C-
-
-CProcessPCH /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s390566018.397171
-e390566019.156752
-r1
-xProcessPCH
-x/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth
-xMoSync_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile MoSync_Prefix.pch2ae565829047b741^853e28839047b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch0000000000000000^4007"ProcessPCH /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator --serialize-diagnostics /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch -o /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-epntessbvewapffoyqlgtfjbailm/MoSync_Prefix.pch.d36"0FD4BEC7-2D45-40E5-9F69-CF42739AA134-
-
-CProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-s390566018.397197
-e390566019.192039
-r1
-xProcessPCH++
-x/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth
-xMoSync_Prefix.pch
-xnormal
-xi386
-xobjective-c++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile MoSync_Prefix.pch36ea65829047b741^6e3331839047b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch0000000000000000^4131"ProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator --serialize-diagnostics /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch -o /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-azvnakzaiqqpqshghfvmicafcouy/MoSync_Prefix.pch.d36"A684BDF1-A3B7-4578-9FD5-91BAEC7A107A-
-
-CProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s390566018.397185
-e390566018.483066
-r1
-xProcessPCH++
-x/var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth
-xMoSync_Prefix.pch
-xnormal
-xi386
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile MoSync_Prefix.pch08e965829047b741^d4b87b829047b741^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch0000000000000000^3904"ProcessPCH++ /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth MoSync_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -D_USE_REBUILDER_ -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -mios-simulator-version-min=3.0 -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-generated-files.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-own-target-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-all-target-headers.hmap -iquote /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/WebViewTwitter-project-headers.hmap -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/include -IClasses -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources/i386 -I/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/WebViewTwitter.build/Release-iphonesimulator/WebViewTwitter.build/DerivedSources -F/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator --serialize-diagnostics /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.dia -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/MoSync_Prefix.pch -o /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/yr/bpkflqqn4m18qz2k7wbxdv880000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MoSync_Prefix-dczasfxdvrqvtyaujhbpwastvfgf/MoSync_Prefix.pch.d36"CA688476-EC0D-47F0-8791-C55582502208-
-
-CTouch /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app
-s390566040.990980
-e390566041.000223
-r1
-xTouch
-x/Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"Touch /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app95f3fd989047b741^5a0e00999047b741^---0#0#0#--550"Touch build/Release-iphonesimulator/WebViewTwitter.app    cd /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/anatolijostrovskij/workspace/hack/WebViewTwitter/Output/Release/iOS/iPhone_simulator/package/xcode-proj/build/Release-iphonesimulator/WebViewTwitter.app36"EBD31500-01D8-44AC-8555-EF5BE2D8C21F-
-
