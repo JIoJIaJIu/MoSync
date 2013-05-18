@@ -6,19 +6,25 @@ function onError (argument) {
     $('body').html(JSON.stringify(arguments));
 }
 
-mosync.rlog("GOOGO");
 $(function () {
     //$('body').html('');
     //$('body').html('LOL');
     //$('body').prepend('1<br>');
-    //appCore.accelerometer.down(function (data) {
+    //new appCore.accelerometer().down(function (data) {
         //$('body').prepend(JSON.stringify(data)+ '<br>');
     //});
+    //setInterval(function () {
+        //new appCore.accelerometer().isBangPos(function () {
+            
+            //$('body').prepend('bang pos');
+            //$('body').prepend('bang pos');
+        //});
+    //}, 100);
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
         sendToPlatform(['findDevices'], function () {
-            $('.devices').prepend(JSON.stringify(arguments));
+            $('.devices').prepend(JSON.stringify(arguments) + '<br>');
         });
     });
     $('.log').on('click', function () {
