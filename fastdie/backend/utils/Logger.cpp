@@ -1,12 +1,19 @@
-#include <MAFS/File.h>
+#include <Wormhole/FileUtil.h>
+#include <MAUtil/String.h>
 #include "Logger.h"
 
 Logger::Logger()
 {
-    fd = fopen("/storage/sdcard0/mosync.log", "w+");
+    util = new Wormhole::FileUtil; 
 }
 
 void Logger::write(char *str)
 {
-    fputs(str, fd);
+    MAUtil::String file;
+    file += "/storage/sdcard0/mosync.txt";
+
+    MAUtil::String data;
+    data += str;
+
+    util->writeTextToFile(file, data);
 }
