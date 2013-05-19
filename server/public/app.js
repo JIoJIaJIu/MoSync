@@ -17,7 +17,7 @@ function initializeSockets () {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+$(function {
     var uid = new Date().valueOf(),
         gid = null;
 
@@ -44,4 +44,6 @@ client.connect('ws://localhost:8080/', 'echo-protocol');
         });
         initializeSockets();
     });
+
 });
+
