@@ -5,6 +5,7 @@
 #include "BluetoothListeners.h"
 #include "utils/Logger.h"
 #include "Moblet.h" 
+#include "Server.h"
 
 #include "MAHeaders.h" // Defines BEEP_WAV
 
@@ -35,10 +36,12 @@ MyMoblet::MyMoblet()
     addMessageFun(
         "Beep",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::beep);
-    //3
     addMessageFun(
         "findDevices",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::findDevices);
+    addMessageFun(
+        "game::create",
+        (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::gameCreate);
 }
 
 void MyMoblet::vibrate(Wormhole::MessageStream& message)
@@ -56,4 +59,9 @@ void MyMoblet::beep(Wormhole::MessageStream& message)
 void MyMoblet::findDevices(Wormhole::MessageStream& message)
 {
     mDiscoverer->search(message, message.getNext());
+}
+
+void MyMoblet::gameCreate(Wormhole::MessageStream& message)
+{
+    mServer = new MyServer(message);
 }

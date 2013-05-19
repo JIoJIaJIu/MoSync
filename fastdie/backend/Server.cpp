@@ -1,3 +1,7 @@
-#include <MAUtil/Server.h>
+#include <Wormhole/MessageStream.h>
+#include "Server.h"
 
-using namespace MAUtil;
+MyServer::MyServer(Wormhole::MessageStream &message)
+{
+    mMessage = &message;
+}
