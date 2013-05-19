@@ -67,7 +67,9 @@ void MyMoblet::findDevices(Wormhole::MessageStream& message)
 
 void MyMoblet::gameCreate(Wormhole::MessageStream& message)
 {
-    mServer = new MyServer(message);
+    mLogger->write("gameCreate");
+    mServer = new MyServer(mLogger);
+    mServer->connect(message);
 }
 
 void MyMoblet::log1(Wormhole::MessageStream& message)
