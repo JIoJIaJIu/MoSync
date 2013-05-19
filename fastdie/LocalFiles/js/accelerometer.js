@@ -71,6 +71,15 @@ appCore.accelerometer = (function(){
             }
         }, 50);
     };
+    gameAccelerometer.inBadPosition = function (handler) {
+        var _this = this;
+        var interval = setInterval(function() {
+            if (_this.isBadPosition()) {
+                clearInterval(interval);
+                handler();
+            }
+        }, 50);
+    };
 
     return gameAccelerometer;
 })();
