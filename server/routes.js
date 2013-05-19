@@ -4,13 +4,13 @@ module.exports = function (app, express) {
             var module = record[1];
             var cb = record[2];
             if (typeof module[cb] === 'function') {
-               module[cb].apply(module, [app].concat(arguments)); 
+               module[cb].apply(module, [app].concat(Array.prototype.slice.apply(arguments))); 
             };
         }); 
     });
 };
 
 var _ROUTES_ = [
-    [ "create_game", require("./modules/game.js"), "create" ],
-    [ "join_game", require("./modules/game.js"), "join" ]
+    [ "/create_game", require("./modules/game.js"), "create" ],
+    [ "/join_game", require("./modules/game.js"), "join" ]
 ]

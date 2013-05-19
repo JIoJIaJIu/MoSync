@@ -23,14 +23,22 @@ module.exports = function (server, express) {
         console.log((new Date()) + ' Connection accepted.');
 
         connection.on('message', function(message) {
-            if (message.type === 'utf8') {
-                console.log('Received Message: ' + message.utf8Data);
-                connection.sendUTF(message.utf8Data);
-            }
-            else if (message.type === 'binary') {
-                console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');
-                connection.sendBytes(message.binaryData);
-            }
+            console.log('Received Message: ' + message.utf8Data);
+
+            var obj = JSON.parse(message.utf8Data());
+            switch (obj.message) {
+                'client-ready':
+                    var game = require("./modules/game.js");
+                    if (game.setReady(obj.gid, obj.uid))    
+                        connection.sendUTF({
+                            gid: obj.gid,
+                            uid: obj.uid,
+                            message: 'game-ready' 
+                        });
+                    break;
+                default:
+                    break;
+            };
         });
 
         connection.on('close', function(reasonCode, description) {
