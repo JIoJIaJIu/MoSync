@@ -1,10 +1,9 @@
 #include <Wormhole/MessageStream.h>
 #include "Server.h"
 #include <MAUtil/Server.h>
-#include <MAUtil/mauuid.h>
 #include "utils/Logger.h"
+#include "Common.h"
 
-DEFINE_BTMAUUID(MY_SERVER_UUID, 0x1163);
 MyServer::MyServer(Logger *logger)
 {
     mLogger = logger;
@@ -14,10 +13,12 @@ MyServer::MyServer(Logger *logger)
 
 void MyServer::serverAcceptFailed(MAUtil::Server *server, int result)
 {
+    mLogger->write("Failed");
 }
 
 void MyServer::serverAccepted(MAUtil::Server *server, MAUtil::Connection* newConnection)
 {
+    mLogger->write("Accepted");
 }
 
 void MyServer::connect(Wormhole::MessageStream &message)
