@@ -11,6 +11,13 @@ document.addEventListener(
 	handleEvents
 );
 
+//Close the application when the back key is pressed
+document.addEventListener(
+	"backbutton",
+	function() { mosync.app.exit(); }, 
+	true
+);
+
 // addEventListener should get callback function instead of EventListener object
 function handleEvents(event) {
 	coreApp.handleEvent(event);
@@ -23,8 +30,6 @@ var coreApp = function coreApp_constructor() {
 	}
 	
 	function coreApp__initialize() {
-	    // Close the application when the back key is pressed
-	    document.addEventListener("backbutton", function() { mosync.app.exit(); }, true);
 	    var viewSwitcher = getViewSwitcher();
 	    try {
 	    	viewSwitcher.init();
@@ -35,7 +40,7 @@ var coreApp = function coreApp_constructor() {
 	    }
 	    
 	    function switchScreen() {
-	    	viewSwitcher.show($(this).data("screen"));
+	    	viewSwitcher.show($(this).attr("data-screen"));
 	    }
 	    
 	    $("[data-screen]").on("click", switchScreen);
@@ -148,14 +153,17 @@ var deviceUtils = {
  * @param message {Array} list of words
  * @param callback {Function}
  */
-function sendToPlatform (message, callback) {
-    var arr = ['Custom', message];
+function sendToPlatform (messages, callback) {
+    var arr = ['Custom'],
+        $loading = $('.loading');
 
+    $loading.show();
+    arr = arr.concat(messages);
     mosync.bridge.send(
         arr,
         function (data) {
+            $loading.hide();
             callback(data);
-            $('.vp-debug').prepend(message + ':<br>' + JSON.stringify(data) + '<br><br>');
         }
     );
 }

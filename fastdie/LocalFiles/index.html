@@ -20,7 +20,6 @@
     </head>
 
     <body>
-    <div class="link show-debug-fixed" data-screen="debug"></div>
         <div id="wrapper" class="content">
             <!-- <div id="align-helper">&nbsp;</div> -->
             <div id="view-page-area" class="view-page-area">
@@ -33,19 +32,20 @@
                         </ul>
 	               </div>
 	            </div>
-	            <div class="vp-create-game">
-                    <form>
-    	                <div><label for="game_name">Название игры</label><input type="text" name="game_name" id="game_name" /></div>
-                        <div class="box-center u-helper">
-        	                <a class="btn-0 confirm">Создать</a>
-                        </div>
-                        <div class="box-center u-helper"><a class="btn-0 cancel" data-screen="main" onclick="return viewSwitcher.show">Отмена</a></div>
-                    </form>
-	            </div>
-	            <div class="vp-devices-lookup">Нашли устройства</div>
-	            <div class="vp-debug">
-                    <div class="link go-to-main" data-screen="main">на главную</a>
+	            <!-- <div class="vp-create-game">
+	                                <form>
+	                	                <div><label for="game_name">Название игры</label><input type="text" name="game_name" id="game_name" /></div>
+	                                    <div class="box-center u-helper">
+	                    	                <a class="btn-0 confirm">Создать</a>
+	                                    </div>
+	                                    <div class="box-center u-helper"><a class="btn-0 cancel" data-screen="main" onclick="return viewSwitcher.show">Отмена</a></div>
+	                                </form>
+	            </div> -->
+                <div class="vp-create-game layout-center">
+                    <h1>Ожидаем противника</h1>
+                    <div class="u-helper box-center"><img src="img/ajax-loader.gif" alt="" title="" /></div>
                 </div>
+	            <div class="vp-devices-lookup">Нашли устройства</div>
             </div>
         </div>
         <div id="helpers">
