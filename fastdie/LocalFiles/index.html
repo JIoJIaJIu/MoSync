@@ -10,41 +10,38 @@
     <head>
         <meta name="viewport" content="width=320, user-scalable=no">
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-        <title>Wormhole Template App</title>
+        <title>Allyourbase</title>
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
         <script type="text/javascript" charset="utf-8" src="js/wormhole.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/mustache.js"></script>
-        <script type="text/javascript" charset="utf-8" src="js/accelerometer.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/core.js"></script>
         <script type="text/javascript" charset="utf-8" src="js/ui.js"></script>
     </head>
 
     <body>
-        <div class="loading">Загрузка... </div>
-        <!--<img class="background" src="imgs/bg.jpg">-->
-        <div class="content">
-            <div class="main-page">
-                111
-                <div class="button ">Создать игру</div>
-                <div class="button">Найти игру</div>
-                <div class="button find-device">Поиск устройств</div>
-                <div class="button log">лог</div>
-            <div class="logger">
+        <div id="wrapper" class="content">
+            <!-- <div id="align-helper">&nbsp;</div> -->
+            <div id="view-page-area" class="view-page-area">
+                <div class="vp-main">
+                    <div class="main-nav-vertical-helper">
+                        <ul id="main-nav" class="navig js-navigation">
+                            <li data-screen="create-game"><span>Создать игру</span></li>
+                            <li><span>Найти игру</span></li>
+                            <li data-screen="devices-lookup"><span>Поиск устройств</span></li>
+                        </ul>
+	               </div>
+	            </div>
+	            <div class="vp-create-game">
+	                <div><label for="game_name">Название игры</label><input type="text" name="game_name" id="game_name" /></div>
+	                <a class="btn-0">Создать</a>
+	            </div>
+	            <div class="vp-devices-lookup">Нашли устройства</div>
             </div>
-            <div class="devices">
-                devices
-            </div>
-            </div>
-
         </div>
+        <div id="helpers">
+            <div id="loader-box">Загрузка...</div>
+        </div>
+        <img id="background" src="img/bg.jpg" alt="" title="">
     </body>
-
-    <script type="text/html" class="m-device-list-item">
-<ul class="devices">
-    {{#devices}}
-        <li>{{.}}</li>
-    {{/devices}}
-</ul>
-    </script>
 </html>
