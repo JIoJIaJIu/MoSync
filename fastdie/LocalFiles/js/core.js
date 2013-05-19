@@ -34,9 +34,11 @@ var coreApp = function coreApp_constructor() {
 	    	return;
 	    }
 	    
-	    $("."+ CONSTS.NAVIGATION_CLASS +">li").on("click", function() {
+	    function switchScreen() {
 	    	viewSwitcher.show($(this).attr("data-screen"));
-	    });
+	    }
+	    
+	    $("[data-screen]").on("click", switchScreen);
 	    
 		initialized = true;
 	}
@@ -109,7 +111,7 @@ var viewSwitcher = function viewSwitcher_constructor() {
 			var viewName = getViewName(view);
 			var $newView = null;
 			if (!($newView = $(viewName, viewPageArea)).length) {
-				return;
+				return false;
 			}
 			
 			$overlay.show();
@@ -122,6 +124,8 @@ var viewSwitcher = function viewSwitcher_constructor() {
 					$overlay.hide();
 				});
 			});
+			
+			return true;
 		},
 		getCurrentView: function viewSwitcher_getCurrentView() {
 			return viewPageArea.querySelector("."+ CONSTS.ACITVE_VIEW_CLASS);

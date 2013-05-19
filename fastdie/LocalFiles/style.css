@@ -82,10 +82,6 @@ body {
     display: none;
 }
 
-.view-page-area {
-    padding-top: 30px;	
-}
-
 #background {
 	position: absolute;
 	top: 0;
@@ -94,39 +90,66 @@ body {
 	width: 100%;
 }
 
+#view-switcher-overlay {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+#main-nav {
+    font-size: 2.2em;
+    line-height: 1.4;
+    position: relative;
+    top: -50%;
+    text-align: center;
+}
+
+.view-page-area {
+    padding-top: 30px;  
+}
+
 .main-nav-vertical-helper {
     position: absolute;
     top: 50%;
     width: 100%;
 }
 
-#view-switcher-overlay {
-	background-color: transparent;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1000;
-}
-
-#main-nav {
-	font-size: 2.2em;
-	line-height: 1.4;
-	position: relative;
-	top: -50%;
-	text-align: center;
-}
-
 .navig>li {
 	margin: .5em 0;
 }
 
+.u-helper.box-center {
+	text-align: center;
+}
+
 .btn-0 {
-	background-color: #ce3310;
 	color: #fff;
     display: inline-block;	
-    padding: .5em;
+    padding: .5em 1em;
+    
+    border-radius: .25em;
+}
+
+.btn-0.confirm {
+    background-color: #ce3310;
+}
+
+.btn-0.cancel {
+	color: #000;
+	font-size: 1.4em;
+}
+
+form label {
+	display: block;
+}
+
+form > div {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .view-page-area>div {
