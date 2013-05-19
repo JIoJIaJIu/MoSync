@@ -19,10 +19,4 @@ $(function () {
             $('.logger').append(message + '<br>');
         });
     });
-
-    document.addEventListener(
-        "backbutton",
-        function() { mosync.app.exit(); },
-        true
-    );
 });
