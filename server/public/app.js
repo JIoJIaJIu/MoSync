@@ -1,11 +1,46 @@
+function append (html) {
+    $('.c').append(html);
+}
+
+function html (html) {
+    $('.c').html(html);
+}
+function h1 (text) {
+    html('<h1>' + text + '</h1>');
+}
+
+function newGameForm () {
+    html('<input class="game-name"><div class="create-game">Создать</div>');
+}
+
+function pistolet () {
+    html ('<img width="80%" class="pistolet" src="/pistolet.png">');
+
+    $('.pistolet').on('click', function () {
+        append('<img class="bang" src="/bang.png">');
+        if (appCore.accelerometer.isBangPosition()) {
+            $.post( '/client_bang', {uid: uid, gid: gid})
+        } else {
+            $.post( '/client_miss', {uid: uid, gid: gid});
+        };
+    });
+}
+
+function lose () {
+    html('<img src="/potracheno.png" class="potracheno">');
+}
+function win () {
+    html('<img src="/win.jpg" class="win">');
+}
+
 var uid = new Date().valueOf(),
-    gid = null;
-var accEnabled = false;
+    gid = null,
+    accEnabled = false;
 
 function process() {
     appCore.accelerometer.inStartPosition(function () {
         $.post('/client_ready', {uid: uid, gid: gid}, function () {
-            $('.wrap').html('5 4 3 2 1');
+            h1('5 4 3 2 1');
             var timeout;
             accEnabled = true;
             mosync.bridge.send(["Custom", "Vibrate", 5000]);
@@ -16,14 +51,13 @@ function process() {
                 switch (status) {
                     case 'reject':
                         clearTimeout(timeout);
-                        $("body").html('Противник поторопился');
-                        accEnabled = false;
+                        h1('Противник поторопился');
                         break;
                     case 'win':
-                        $('body').html('WIN!!!!');
+                        win();
                         break;
                     case 'lose':
-                        $('body').html('LOOSE!!!!!');
+                        lose();
                         break;
                     default:
                         break;
@@ -34,21 +68,12 @@ function process() {
                 if (!accEnabled)
                     return;
                 $.post( '/client_reject', {uid: uid, gid: gid});
-                $("body").html('Фальтстарт');
+                h1('Фальтстарт');
                 accEnabled = false;
             });
 
             timeout = setTimeout(function() {
                 accEnabled = false;
-                $('.wrap').html('<div class="pistolet">это пистолет</div>');
-
-                $('.pistolet').on('click', function () {
-                    if (appCore.accelerometer.isBangPosition()) {
-                        $.post( '/client_bang', {uid: uid, gid: gid})
-                    } else {
-                        $.post( '/client_miss', {uid: uid, gid: gid});
-                    };
-                });
             }, 3000);
 
         });

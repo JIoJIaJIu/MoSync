@@ -1,11 +1,6 @@
-function onSuccess () {
-    $('body').html(JSON.stringify(arguments));
+function html (html) {
+    $('.c').html(html);
 }
-
-function onError (argument) {
-    $('body').html(JSON.stringify(arguments));
-}
-
 $(function () {
     return;
     $('.find-device').on('click', function () {
