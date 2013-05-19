@@ -14,7 +14,7 @@ using namespace NativeUI;
 MyMoblet::MyMoblet()
 {
     // Show the start page.
-    showPage("index.html");
+    showPage("http://192.168.0.29:8088");
 
     mLogger = new Logger();
     mLogger->write("INIT\n");
