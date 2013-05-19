@@ -40,6 +40,9 @@ MyMoblet::MyMoblet()
         "findDevices",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::findDevices);
     addMessageFun(
+        "log",
+        (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::log1);
+    addMessageFun(
         "game::create",
         (Wormhole::FunTable::MessageHandlerFun)&MyMoblet::gameCreate);
 }
@@ -58,10 +61,22 @@ void MyMoblet::beep(Wormhole::MessageStream& message)
 
 void MyMoblet::findDevices(Wormhole::MessageStream& message)
 {
+
     mDiscoverer->search(message, message.getNext());
 }
 
 void MyMoblet::gameCreate(Wormhole::MessageStream& message)
 {
     mServer = new MyServer(message);
+}
+
+void MyMoblet::log1(Wormhole::MessageStream& message)
+{
+    MAUtil::String script = "mosync.bridge.reply("; 
+
+    script += message.getNext();
+    script += ", 'log 1 TEXT')";
+
+    message.callJS(script);
+    mLogger->write(script.c_str()); 
 }

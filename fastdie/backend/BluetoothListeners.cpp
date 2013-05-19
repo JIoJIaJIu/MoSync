@@ -14,8 +14,7 @@ void DiscoveryDeviceListener::btNewDevice(const MAUtil::BtDevice &dev)
 
     MAUtil::String script = "mosync.bridge.reply("; 
 
-    mLogger->write(dev.name.c_str());
-
+    mLogger->write(dev.name.c_str()); 
     script += mID;
     script += ", '";
     script += dev.name.c_str();
@@ -31,8 +30,10 @@ void DiscoveryDeviceListener::btDeviceDiscoveryFinished(int state)
 }
 
 void DiscoveryDeviceListener::setID(const char *ID)
+
 {
-    strncpy(mID, ID, strlen(ID));
+    mID = new char(strlen(ID));
+    mID = strncpy(mID, ID, strlen(ID));
 }
 
 void DiscoveryDeviceListener::setMessage(Wormhole::MessageStream &message)
