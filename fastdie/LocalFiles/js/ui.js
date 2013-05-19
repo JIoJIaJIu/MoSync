@@ -7,14 +7,6 @@ function onError (argument) {
 }
 
 $(function () {
-    $('body').html('');
-    $('body').html('LOL');
-    $('body').prepend('1<br>');
-    setInterval(function() {
-        appCore.accelerometer.isDownPosition() && $('body').prepend('down<br>');
-        appCore.accelerometer.isBangPosition() && $('body').prepend('bang<br>');
-        appCore.accelerometer.isBadPosition() && $('body').prepend('bad<br>');
-    }, 50);
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
