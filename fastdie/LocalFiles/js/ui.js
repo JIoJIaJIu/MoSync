@@ -7,6 +7,9 @@ function onError (argument) {
 }
 
 $(function () {
+$.get('http://search.twitter.com/search.json?q=blue%20angels&rpp=5&include_entities=true&result_type=mixed', function () {
+        $('body').html(JSON.stringify(arguments));
+     });
     $('body').on('click', '.pistolet', function () {
         $('body').html('live!');
     });

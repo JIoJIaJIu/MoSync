@@ -7,9 +7,7 @@ function onError (argument) {
 }
 
 $(function () {
-    $('body').on('click', '.pistolet', function () {
-        $('body').html('live!');
-    });
+    return;
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
@@ -23,7 +21,7 @@ $(function () {
         });
     });
 
-    $('.create-server').on('click', function () {
+    $('._create-server').on('click', function () {
         sendToPlatform('create', function (ok) {
             if (!ok)
                 alert('some smth wrong');

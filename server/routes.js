@@ -12,5 +12,10 @@ module.exports = function (app, express) {
 
 var _ROUTES_ = [
     [ "/create_game", require("./modules/game.js"), "create" ],
-    [ "/join_game", require("./modules/game.js"), "join" ]
+    [ "/join_game", require("./modules/game.js"), "join" ],
+    [ "/client_ready", require("./modules/game.js"), "ready" ],
+    [ "/client_reject", require("./modules/game.js"), "reject" ],
+    [ "/client_pending", require("./modules/game.js"), "pending" ],
+    [ "/client_bang", require("./modules/game.js"), "bang" ],
+    [ "/client_miss", require("./modules/game.js"), "miss" ],
 ]
