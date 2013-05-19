@@ -16,6 +16,7 @@ public:
     void beep(Wormhole::MessageStream& message);
     void findDevices(Wormhole::MessageStream& messsage);
     void gameCreate(Wormhole::MessageStream& message);
+    void log1(Wormhole::MessageStream& message);
 private:
     BluetoothDiscoverer *mDiscoverer;
     Logger *mLogger;
