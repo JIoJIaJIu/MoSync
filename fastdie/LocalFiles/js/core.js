@@ -35,7 +35,7 @@ var coreApp = function coreApp_constructor() {
 	    }
 	    
 	    function switchScreen() {
-	    	viewSwitcher.show($(this).attr("data-screen"));
+	    	viewSwitcher.show($(this).data("screen"));
 	    }
 	    
 	    $("[data-screen]").on("click", switchScreen);
@@ -148,17 +148,14 @@ var deviceUtils = {
  * @param message {Array} list of words
  * @param callback {Function}
  */
-function sendToPlatform (messages, callback) {
-    var arr = ['Custom'],
-        $loading = $('.loading');
+function sendToPlatform (message, callback) {
+    var arr = ['Custom', message];
 
-    $loading.show();
-    arr = arr.concat(messages);
     mosync.bridge.send(
         arr,
         function (data) {
-            $loading.hide();
             callback(data);
+            $('.vp-debug').prepend(message + ':<br>' + JSON.stringify(data) + '<br><br>');
         }
     );
 }
