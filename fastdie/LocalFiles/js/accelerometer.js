@@ -1,4 +1,5 @@
 var appCore = {};
+
 appCore.accelerometer = (function(){
 
     var accelerometer = new Accelerometer();
@@ -59,6 +60,16 @@ appCore.accelerometer = (function(){
 
     gameAccelerometer.isBadPosition = function (handler) {
         return lastAcceleration.type === 'bad';
+    };
+
+    gameAccelerometer.inStartPosition = function (handler) {
+        var _this = this;
+        var interval = setInterval(function() {
+            if (_this.isDownPosition()) {
+                clearInterval(interval);
+                handler();
+            }
+        }, 50);
     };
 
     return gameAccelerometer;

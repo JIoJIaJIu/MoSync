@@ -21,14 +21,20 @@ $(function () {
     });
 
     $('.create-server').on('click', function () {
-        console.log('123');
         sendToPlatform('create', function (ok) {
             if (!ok)
                 alert('some smth wrong');
 
-        
-
-        })
+            sendToPlatform('join', function () {
+                appCore.accelerometer.inStartPosition(function () {
+                    $('body').html('ту');
+                    
+                    appCore.accelerometer.inBadPosition(function () {
+                        $("body").html('NOOOOOOOOOOOO!!!!!!!!!!!!!!!!');
+                    });
+                });
+            });
+        });
     });
 
     document.addEventListener(

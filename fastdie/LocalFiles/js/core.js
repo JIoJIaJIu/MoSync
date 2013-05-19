@@ -1,3 +1,19 @@
+mosync.bridge.send = function (messages, callback) {
+    setTimeout(function() {
+        console.log(messages[1]);
+        callback && callback(true);
+        //switch(messages[1]) {
+            //case 'create':
+                //callback(true);
+                //break;
+            //case 'join':
+                //callback();
+            //case 'cancel'
+                //callback();
+            //case
+        //}
+    }, Math.random() * 1000);
+}
 
 document.addEventListener(
 	"deviceready",
@@ -139,6 +155,8 @@ var deviceUtils = {
 		mosync.bridge.send(["Custom", "Beep"]);
 	}
 };
+
+
 
 
 /**
