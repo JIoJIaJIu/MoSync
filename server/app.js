@@ -6,7 +6,6 @@ const params = {
 const app = express();
 require("./config")(app, express);
 require("./routes")(app, express);
-require("./websocket")(app, express);
 app.get("/", function (req, res) {
     res.render("index");
 });

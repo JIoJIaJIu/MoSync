@@ -2,29 +2,23 @@ var lastGameId = 0;
 
 var game = {
     create: function (server, req, res) {
-        this._activeGames[lastGameId] = [req.body.uid];
-        res.send(lastGameId);
+        this._activeGames[lastGameId] = res;
         lastGameId++;
     },
 
     join: function (server, req, res) {
         for (var k in this._activeGames) {
-            this._activeGames[k].push(req.body.uid);
+            var sres = this._activeGames[k];
             break;
         };
         res.send(k); 
+        sres.send(k);
+
+        this._activeGames[k] = null;
     },
 
     _activeGames: {},
-    _readyGames: {},
 
-    setReady: function(gid, uid) {
-        this._readyGames[uid] = this._readyGames[uid] || [];
-        this._readyGames[uid].push(gid);
-        if (this._readyGames[uid].length === 2)
-            return true;
-        return false;
-    }
 };
 
 module.exports = game;
