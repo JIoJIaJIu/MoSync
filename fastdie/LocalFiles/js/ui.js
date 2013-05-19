@@ -10,7 +10,7 @@ $(function () {
     $('.find-device').on('click', function () {
         $('.main-page').show();
         $('.devices').show();
-        sendToPlatform('findDevices', function () {
+        sendToPlatform('findDevices', function (message) {
             $('.devices').prepend(JSON.stringify(arguments) + '<br>');
             $('.logger').append(message + '<br>');
         });
