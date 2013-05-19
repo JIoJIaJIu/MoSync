@@ -26,9 +26,9 @@
                 <div class="vp-main">
                     <div class="main-nav-vertical-helper">
                         <ul id="main-nav" class="navig js-navigation">
-                            <li data-screen="create-game"><span>Создать игру</span></li>
-                            <li><span>Найти игру</span></li>
-                            <li data-screen="devices-lookup"><span>Поиск устройств</span></li>
+                            <li data-screen="create-game" data-action="createGame"><span>Создать игру</span></li>
+                            <li data-screen="find-game" data-action="findGame"><span>Найти игру</span></li>
+                            <!-- <li data-screen="devices-lookup"><span>Поиск устройств</span></li> -->
                         </ul>
 	               </div>
 	            </div>
@@ -41,9 +41,15 @@
 	                                    <div class="box-center u-helper"><a class="btn-0 cancel" data-screen="main" onclick="return viewSwitcher.show">Отмена</a></div>
 	                                </form>
 	            </div> -->
+                <div class="vp-find-game layout-center">
+                    <h1>Ищем противника</h1>
+                    <div class="u-helper box-center"><img src="img/ajax-loader.gif" alt="" title="" /></div>
+                    <div class="box-center u-helper"><a class="btn-0 cancel" data-screen="main">Отмена</a></div>
+                </div>
                 <div class="vp-create-game layout-center">
                     <h1>Ожидаем противника</h1>
                     <div class="u-helper box-center"><img src="img/ajax-loader.gif" alt="" title="" /></div>
+                    <div class="box-center u-helper"><a class="btn-0 cancel" data-screen="main">Отмена</a></div>
                 </div>
 	            <div class="vp-devices-lookup">Нашли устройства</div>
             </div>

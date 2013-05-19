@@ -23,6 +23,28 @@ function handleEvents(event) {
 	coreApp.handleEvent(event);
 }
 
+var globalActionsObject = {
+	createGame: function() {
+		sendToPlatform(
+			["create"], 
+			function is_Ok(isOk) { 
+				if (!isOk) {
+					this.handleErrorFromServer(-1);
+				}
+			},
+			this
+		);
+	},
+	handleErrorFromServer: function(errorCode) {
+		
+	}
+}
+
+function handleActions() {
+	var clbck = globalActionsObject[$(this).attr("data-action")];
+	typeof clbck == "function" && clbck();
+}
+
 var coreApp = function coreApp_constructor() {
 	var initialized = false;
 	var CONSTS = {
@@ -44,6 +66,7 @@ var coreApp = function coreApp_constructor() {
 	    }
 	    
 	    $("[data-screen]").on("click", switchScreen);
+	    $("[data-action]").on("click", handleActions);
 	    
 		initialized = true;
 	}
@@ -153,7 +176,7 @@ var deviceUtils = {
  * @param message {Array} list of words
  * @param callback {Function}
  */
-function sendToPlatform (messages, callback) {
+function sendToPlatform (messages, callback, ctx) {
     var arr = ['Custom'],
         $loading = $('.loading');
 
@@ -161,9 +184,9 @@ function sendToPlatform (messages, callback) {
     arr = arr.concat(messages);
     mosync.bridge.send(
         arr,
-        function (data) {
+        function(data) {
             $loading.hide();
-            callback(data);
+            callback.call(ctx, data);
         }
     );
 }
